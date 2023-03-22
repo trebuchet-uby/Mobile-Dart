@@ -1,37 +1,58 @@
 import 'package:flutter/material.dart';
+import 'package:readmore/readmore.dart';
 
 void main() {
-  runApp(Aplikasi1());
+  runApp(Aplikasi());
 }
 
-class Aplikasi1 extends StatelessWidget {
+class Aplikasi extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Aplikasi Dongeng"),
-        ),
-        body: Center(
-          child: Padding(
-            padding: const EdgeInsets.all(10.1),
-            child: Text(
-              "Ini aplikasi ujicoba saya. " +
-                  "Pada hari ini, saya turut belajar bersama. " +
-                  "Belajar Pemrograman Mobile. " +
-                  "Karena saya Merupakan mahasiswa teknik. ",
-              textAlign: TextAlign.justify,
-              maxLines: 5,
-              overflow: TextOverflow.ellipsis,
-              style: TextStyle(
-                  color: Colors.deepPurpleAccent,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 30,
-                  letterSpacing: 3,
-                  fontFamily: 'Rune'),
-            ),
+          centerTitle: true,
+          title: Text(
+            "Transformers",
+            style: TextStyle(
+                fontFamily: 'font1',
+                fontSize: 40,
+                fontWeight: FontWeight.bold,
+                color: Color.fromARGB(223, 255, 0, 0)),
           ),
-          //bottomNavigationBar: BottomAppBar(child: Text("Terima Kasih")),
+        ),
+        body: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(top: 20, bottom: 10),
+              child: Text(
+                'Star Wars',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    fontFamily: 'font2',
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+            SingleChildScrollView(
+              child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: ReadMoreText(
+                      "Selamat Datang di AplikasiKu!" +
+                          "Ini adalah aplikasi pertama saya," +
+                          "Terima Kasih!",
+                      trimLines: 2,
+                      textAlign: TextAlign.justify,
+                      trimMode: TrimMode.Line,
+                      style: TextStyle(
+                        color: Color.fromARGB(224, 0, 204, 255),
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                        letterSpacing: 2,
+                        fontFamily: 'fontku',
+                      ))),
+            )
+          ],
         ),
       ),
     );
