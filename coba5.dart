@@ -36,22 +36,24 @@ class Aplikasi extends StatelessWidget {
             ),
             SingleChildScrollView(
               child: Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: ReadMoreText(
-                      "Selamat Datang di AplikasiKu!" +
-                          "Ini adalah aplikasi pertama saya," +
-                          "Terima Kasih!",
-                      trimLines: 2,
-                      textAlign: TextAlign.justify,
-                      trimMode: TrimMode.Line,
-                      style: TextStyle(
-                        color: Color.fromARGB(224, 0, 204, 255),
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20,
-                        letterSpacing: 2,
-                        fontFamily: 'fontku',
-                      ))),
-            )
+                padding: const EdgeInsets.all(10.0),
+                child: ReadMoreText(
+                  "Selamat Datang di AplikasiKu!" +
+                      "Ini adalah aplikasi pertama saya," +
+                      "Terima Kasih!",
+                  trimLines: 2,
+                  textAlign: TextAlign.justify,
+                  trimMode: TrimMode.Line,
+                  style: TextStyle(
+                    color: Color.fromARGB(224, 0, 204, 255),
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                    letterSpacing: 2,
+                    fontFamily: 'fontku',
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
