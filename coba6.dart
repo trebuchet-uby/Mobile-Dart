@@ -37,7 +37,12 @@ class Aplikasi extends StatelessWidget {
             Container(
               height: 200,
               width: 300,
-              color: Colors.amber,
+              color: Color.fromARGB(255, 255, 61, 7),
+              child: Container(
+                height: 50,
+                width: 500,
+                color: Color.fromARGB(255, 219, 234, 9),
+              ),
             ),
             Container(
               height: 100,
