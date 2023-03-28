@@ -18,7 +18,7 @@ class Aplikasi extends StatelessWidget {
                 fontFamily: 'font1',
                 fontSize: 40,
                 fontWeight: FontWeight.bold,
-                color: Color.fromARGB(223, 255, 0, 0)),
+                color: Color.fromARGB(223, 228, 46, 13)),
           ),
         ),
         body: Column(
@@ -29,7 +29,7 @@ class Aplikasi extends StatelessWidget {
                 'Star Wars',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                    fontFamily: 'font2',
+                    fontFamily: 'Rune',
                     fontSize: 40,
                     fontWeight: FontWeight.bold),
               ),
@@ -49,7 +49,7 @@ class Aplikasi extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
                     letterSpacing: 2,
-                    fontFamily: 'fontku',
+                    fontFamily: 'London',
                   ),
                 ),
               ),
